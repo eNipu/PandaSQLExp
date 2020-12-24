@@ -33,7 +33,21 @@ df2 = pd.DataFrame(
 # print(dfs[0:3])
 
 # Selection by labe
-print(df.loc[dates[1]])
+# print(df.loc[dates[1]])
 
 # Selecting on a multi-axis by label:
-print(df.loc[:,["A","B"]])
+# print(df.loc[:,["A","B"]])
+
+# print(df.at[dates[0], "A"])
+
+
+# Selection by position
+# print(df.iloc[3])
+
+# print(df.iloc[4:5, 0:4])
+
+# print(df.iloc[[1,2,3],[0,2]])
+
+# For getting fast access to a scalar (equivalent to the prior method):
+# df.iloc[1, 1]
+print(df.iat[1,1])

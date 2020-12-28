@@ -62,4 +62,9 @@ df2 = pd.DataFrame(
 # print(df2[df2["E"]].isin())
 
 # print(df.sum())
-print(df.apply(lambda x: x.max() - x.min()))
+# print(df.apply(lambda x: x.max() - x.min()))
+
+#Histograming
+
+s = pd.Series(np.random.randint(0,7,size=10))
+print(s.value_counts())
